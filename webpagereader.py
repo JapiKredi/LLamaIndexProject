@@ -1,6 +1,7 @@
 import llama_index
-from llama_index.llm import OpenAI
-from llama_index.readers import SimpleWebPageReader
-from llama_index import VectorStoreIndex
+from llama_index.llms.openai import OpenAI
+from llama_index.core import Settings
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
+
 import os
 from dotenv import load_dotenv
